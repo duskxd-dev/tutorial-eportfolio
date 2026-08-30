@@ -39,7 +39,7 @@ li {
 .row {
   width: 100%;
   max-width: 800px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 /* NAVIGATION BAR */
@@ -110,6 +110,4 @@ nav {
   width: 100%;
 
   /* Improving my own picture */
-  transform: scale();
-  padding-top: ;
 }
