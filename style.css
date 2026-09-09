@@ -34,6 +34,11 @@ p {
 a {
   text-decoration: none;
   position: relative;
+  transition: opacity 300ms ease;
+}
+
+svg:hover {
+  opacity: 0.7;
 }
 
 .link__hover-effect:after {
@@ -161,7 +166,7 @@ nav {
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
-  margin-bottom: 16px;
+  margin-bottom: 28px;
   animation: animate-profile-picture 800ms 200ms backwards;
 }
 
@@ -171,7 +176,7 @@ nav {
   }
 
   80% {
-    transform: scale(1.1%);
+    transform: scale(1.1);
   }
 
   100% {
@@ -226,6 +231,33 @@ nav {
 
 .about-me__img {
   width: 100%;
+  animation: fade-in 1200ms 800ms backwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.wave {
+  display: inline-block;
+  animation: animate-wave 500ms infinite ease-in-out;
+}
+
+@keyframes animate-wave {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 
 .about-me__info {
